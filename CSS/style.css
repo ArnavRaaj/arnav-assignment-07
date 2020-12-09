@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+body{
+    font-family: 'Castoro', serif;
+    background-image: url("/img/background1.jpg");
+    background-size: cover;
+}
+
+.container{
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    border-radius: 25px;   
+    text-align: center;
+}
+.grey{
+    background-color:#FEF3C7;
+}
+
+#header{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h1{
+    padding: 1rem 0 0 0;
+    margin: 1rem 0 0 0;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0 1rem 0rem 0;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #F59E0B;
+}
+button {
+    background-color: #F59E0B; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+textarea{
+    border: 2px solid #F59E0B ;
+    border-radius: 10px;
+}
+input{
+    border: 2px solid #F59E0B ;
+    border-radius: 10px;
+}
+
+.link_color{
+    background-color: #F59E0B;  
+    color: white;
+}
+.no_border{
+    border: none;
+}
+
+.navigation{
+    display: inline; 
+    padding: 0.5rem 1rem; 
+}
+.bottom_footer{
+    display: inline;
+    
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #3B82F6;
+  color:white;
+  border: none;
+}
+.fa-github {
+    background:black;
+    color:white;
+    border: none;
+  }
+
+@media screen and (max-width: 800px) {
+    
+    .navigation{
+        display: block; 
+        padding: 0.5rem 1rem; 
+    }
+    .footer{
+        display: block;
+    }
+  }
+
+  
