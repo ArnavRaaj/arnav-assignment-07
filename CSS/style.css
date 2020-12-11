@@ -84,7 +84,6 @@ hr{
 
 .navigation .links{
     color: white;
-    /* border: 1px solid; */
 }
 
 .navigation .nav-pills{
@@ -93,4 +92,62 @@ hr{
 
 .special-font{
     font-family:"Comic Sans MS" ;
+}
+
+/* image */
+.hero{
+    text-align: center;
+    margin: 2rem;
+}
+
+.hero-image{
+    border-radius: 40%;
+    height: 300px;
+    width: 200px;
+}
+
+/* translation */
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+
+#output {
+    border: 1px solid black;
+    width: 80%;
+    height: 10vh;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* footer */
+.footer{
+    text-align: center;
+}
+
+/* button */
+/* #btn-translate{
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 1px solid ;
+    border-radius: 2rem;
+} */
+
+#btn-translate{
+    margin-left: 4vh;
+    color: azure;
+    background-color: var(--primary-color);
+    font-family: "Comic Sans MS";
+    
+    border-radius: 20px;
+    height: 2rem;
+}
+#out-text{
+    margin-left: 2vh;
+    padding: 1rem;
 }
