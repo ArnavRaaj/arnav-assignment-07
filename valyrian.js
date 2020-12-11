@@ -2,7 +2,7 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
-var serverURL = "https://api.funtranslations.com/translate/dothraki.json" 
+var serverURL = "https://api.funtranslations.com/translate/valyrian.json" 
 
 //  SERVER URL FOR TRANSLATION
 function getTranslationURL(input) {
