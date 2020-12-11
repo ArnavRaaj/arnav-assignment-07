@@ -1,67 +1,96 @@
-body {
-    font-family: cursive;
-    margin: 0rem;
-    padding: 0rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
+
+:root{
+    --primary-color: #011f1f;
+    --lightDark: #ECFDF5;
+    --dark: #2b2a2a;
+    --offWhite: #F3F4F6;
 }
 
-textarea {
-    width: 80%;
-    height: 10vh;
-    display: block;
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-}
-
-#output {
-    border: 1px solid black;
-    width: 80%;
-    height: 10vh;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.h1-head {
-    height: 10vh;
-    background-color: yellow;
-    padding-top: 1.5rem;
-    text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-.container {
-    max-width: 800px;
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* max-width: 800px; */
     margin: auto;
-    display: block;
+}
+hr{
+    margin: 1rem 0rem;
 }
 
-#btn-translate {
-    margin-left: 4vh;
+/* container */
+
+.center-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+.fluid-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* Links */
+.links{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: blueviolet;
+}
+
+.link-active{
+    border:  1px solid var(--offWhite);
+
+}
+.primary-links{
+    background-color: var(--primary-color);
+    color: azure;
+    border: 1px solid var(--primary-color);
+    margin-right: 1rem;
+}
+
+.tp{
+    margin-top: 1rem;
+}
+
+.secondary-links{
+    color: var(--primary-color);
+    background-color: azure;    
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Lists */
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/* Nav */
+.navigation{
+    background-color: var(--primary-color);
     padding: 1rem;
-    background-color: yellow;
-    font-family: cursive;
+    color: white;
+    border-bottom-right-radius: 2rem;
+}
+
+.navigation .nav-brand{
     font-weight: bold;
-    border-radius: 20px;
 }
 
-#out-text {
-    margin-left: 2vh;
-    padding: 1rem;
+.navigation .links{
+    color: white;
+    /* border: 1px solid; */
 }
 
-.footer {
-    margin-top: auto;
-    height: 22vh;
-    background-color: yellow;
-    text-align: center;
-    padding-bottom: 1rem;
+.navigation .nav-pills{
+    text-align: right;
 }
 
-.foot-para {
-    max-width: 700px;
-    margin: auto;
+.special-font{
+    font-family:"Comic Sans MS" ;
 }
