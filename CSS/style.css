@@ -1,117 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
-
-body{
-    font-family: 'Castoro', serif;
-    background-image: url("/img/background1.jpg");
-    background-size: cover;
+body {
+    font-family: cursive;
+    margin: 0rem;
+    padding: 0rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.container{
-    margin: auto;
-    margin-bottom: 2rem;
-    width: 90%;
-    border-radius: 25px;   
-    text-align: center;
-}
-.grey{
-    background-color:#FEF3C7;
-}
-
-#header{
-    padding: 1rem;
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
     margin: 1rem;
-}
-
-h1{
-    padding: 1rem 0 0 0;
-    margin: 1rem 0 0 0;
-}
-
-
-ul{
-    list-style-type: none;
-    margin: 0 1rem 0rem 0;
     padding: 1rem;
-    overflow: hidden;
+    display: flex;
 }
 
-
-a{
-    text-decoration: none;
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid #F59E0B;
+#output {
+    border: 1px solid black;
+    width: 80%;
+    height: 10vh;
+    margin: 1rem;
+    padding: 1rem;
 }
-button {
-    background-color: #F59E0B; /* Green */
-    border: none;
-    color: white;
-    padding: 10px;
+
+.h1-head {
+    height: 10vh;
+    background-color: yellow;
+    padding-top: 1.5rem;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-  }
-
-textarea{
-    border: 2px solid #F59E0B ;
-    border-radius: 10px;
-}
-input{
-    border: 2px solid #F59E0B ;
-    border-radius: 10px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
-.link_color{
-    background-color: #F59E0B;  
-    color: white;
-}
-.no_border{
-    border: none;
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: block;
 }
 
-.navigation{
-    display: inline; 
-    padding: 0.5rem 1rem; 
+#btn-translate {
+    margin-left: 4vh;
+    padding: 1rem;
+    background-color: yellow;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 20px;
 }
-.bottom_footer{
-    display: inline;
-    
+
+#out-text {
+    margin-left: 2vh;
+    padding: 1rem;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 25px;
+
+.footer {
+    margin-top: auto;
+    height: 22vh;
+    background-color: yellow;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-.fa:hover {
-    opacity: 0.7;
+    padding-bottom: 1rem;
 }
 
-.fa-linkedin {
-  background: #3B82F6;
-  color:white;
-  border: none;
+.foot-para {
+    max-width: 700px;
+    margin: auto;
 }
-.fa-github {
-    background:black;
-    color:white;
-    border: none;
-  }
-
-@media screen and (max-width: 800px) {
-    
-    .navigation{
-        display: block; 
-        padding: 0.5rem 1rem; 
-    }
-    .footer{
-        display: block;
-    }
-  }
-
-  

@@ -1,29 +1,31 @@
-var inputValue = document.getElementById("input");
-var btn = document.getElementById("translate");
-var outputBox = document.getElementById("output");
-var selectLang = document.getElementById("fromEnglish");
+// DOTHRAKI TRANSLATION JS
+var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
+var serverURL = "https://api.funtranslations.com/translate/dothraki.json" 
 
-var lang = selectLang.value;
-var url = "https://api.funtranslations.com/translate/"+lang+".json?text=";
-selectLang.addEventListener("change",function(){
-    lang = selectLang.value;
-    url = "https://api.funtranslations.com/translate/"+lang+".json?text=";
-})
-
-btn.addEventListener("click",translator);
-
-
-
-function errorHandler(error){
-    alert("We are having some issues,please try out after some time", error);
+//  SERVER URL FOR TRANSLATION
+function getTranslationURL(input) {
+    return serverURL + "?" + "text=" + input
 }
 
+function errorHandler(error) {
+    console.log("error occured", error);
+    alert("something wrong with server! try again after some time")
+}
 
-function translator(){
-    fetch(url+inputValue.value)
-    .then(response => response.json())
-    .then(data => {
-            outputBox.innerText = data.contents.translated;
+function clickEventHandler() {
+    var inputVal = txtInput.value; // taking input
+
+    // calling server for processing
+    fetch(getTranslationURL(inputVal))
+        .then(response => response.json())
+        .then(json => {
+            var translatedText = json.contents.translated;
+            outputDiv.innerText = translatedText; // output
         })
-    .catch(errorHandler);
-}
+        .catch(errorHandler)
+
+};
+
+btnTranslate.addEventListener("click", clickEventHandler)
