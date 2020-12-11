@@ -39,7 +39,10 @@ body {
     border: 1px solid var(--offWhite);
 
 }
-
+.lang-world{
+    text-decoration: none;
+    color: var(--offWhite);
+}
 .primary-links {
     background-color: var(--primary-color);
     color: azure;
@@ -94,12 +97,21 @@ body {
     margin: 2rem;
 }
 
-.hero-image {
+.hero-image-wakanda {
     border-radius: 40%;
     height: 300px;
     width: 200px;
 }
 
+.hero-image-dothraki{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.italic{
+    color: var(--primary-color);
+}
 /* translation */
 textarea {
     width: 80%;
@@ -128,55 +140,22 @@ textarea {
     color: var(--offWhite);
     border-top-right-radius: 2rem;
 }
-
-.social-links {
-    width: 80px;
-    height: 80px;
-    text-decoration: none;
-    margin: 20px;
-    position: relative;
-    font-size: 30px;
-    border-radius: 50%; 
-    padding: 0.7rem;
-
+.social-links{
+    font-size: 40px;
     color: var(--offWhite);
-    border: 2px solid;
+    margin: 01rem;
+    padding: 0.5rem 0.8rem;
 }
 
-.social-links::before {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.github:hover{
+    color: blueviolet;
 }
-
-.social-links::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 50%;
-    z-index: 0;
+.insta:hover{
+    color: rgb(206, 24, 100);
 }
-
-.social-links:hover{
-    animation: ro 2s linear infinite;
+.linkedin:hover{
+    color: rgb(20, 78, 202);
 }
-
-@keyframes ro{
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 
 /* button */
