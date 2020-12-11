@@ -28,6 +28,11 @@ body {
     padding-right: 1rem;
 }
 
+.about-section{
+    text-align: center;
+    font-size: 20px;
+
+}
 
 /* Links */
 .links {
