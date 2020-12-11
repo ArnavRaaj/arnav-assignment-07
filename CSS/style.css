@@ -10,6 +10,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
+    background-image: url(/images/background1.jpg);
+
 }
 
 /* container */
